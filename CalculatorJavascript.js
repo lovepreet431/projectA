@@ -35,10 +35,7 @@ function finalentries () {
 	else if (0 < discount && discount > 69) {
 		alert("Discount % must be greater than 0 and less than 70");
 	}
-	else{
-		$("discdollar").value = calculateDollar(price, discount);
-		$("finalprice").value = calculateDV(price, discount);
-	}
+	
 }
 window.onload = function () {
     $("calculate").onclick = finalentries;
